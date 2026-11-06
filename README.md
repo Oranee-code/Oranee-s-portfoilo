@@ -23,7 +23,7 @@ All copy lives in `src/data/`. No component edits are needed for ordinary update
 | `src/data/skills.ts` | Skill groups, section note |
 | `src/data/projects.ts` | Featured projects (placeholder slots until filled) |
 | `src/data/experience.ts` | Roles, dates, highlights |
-| `src/data/education.ts` | Qualifications, providers, dates, status |
+| `src/data/education.ts` | , providers, dates, status |
 | `src/data/contact.ts` | Email, LinkedIn, GitHub, location, CTA copy |
 | `src/data/navigation.ts` | Header links |
 

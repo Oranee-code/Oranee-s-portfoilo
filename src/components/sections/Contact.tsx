@@ -32,7 +32,7 @@ export default function Contact() {
                   <ArrowLink href={`mailto:${contact.email}`}>{contact.ctaLabel}</ArrowLink>
                 ) : (
                   <p className="inline-flex items-center border border-dashed border-line px-5 py-3.5 text-sm text-muted">
-                    Email address to be added
+                    oranee.ks99@gmail.com
                   </p>
                 )}
               </div>

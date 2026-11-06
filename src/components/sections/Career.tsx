@@ -3,21 +3,22 @@ import EducationList from '../EducationList'
 import ExperienceList from '../ExperienceList'
 import Reveal from '../Reveal'
 import SectionHeader from '../SectionHeader'
-import { education } from '../../data/education'
-import { experience } from '../../data/experience'
+
 
 type TabId = 'experience' | 'education'
 
 const tabs: { id: TabId; label: string; count: string }[] = [
-  { id: 'experience', label: 'Experience', count: `${experience.length} roles` },
-  { id: 'education', label: 'Education', count: `${education.length} qualifications` },
+  {
+    id: 'education', label: 'Education',
+    count: ''
+  },
+  {
+    id: 'experience', label: 'Experience',
+    count: ''
+  },
+  
 ]
 
-/**
- * Experience and education share one section: a single framed panel with a
- * two-button toggle, so the page carries one career story instead of two
- * separate blocks.
- */
 export default function Career() {
   const [activeTab, setActiveTab] = useState<TabId>('experience')
   const tabRefs = useRef<Partial<Record<TabId, HTMLButtonElement | null>>>({})
@@ -36,14 +37,14 @@ export default function Career() {
       <div className="shell">
         <SectionHeader
           index="04"
-          label="Experience & education"
+          label="Education & Experience"
           headingId="career-heading"
           title={
             <>
               Leadership first, <em className="font-display italic">then the build.</em>
             </>
           }
-          lede="The roles that shaped how I work, and the training I am building on — one view each."
+         
         />
 
         <Reveal className="mt-12">

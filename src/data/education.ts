@@ -1,48 +1,48 @@
 export type EducationItem = {
   qualification: string
-  /** School, provider or platform — leave empty until confirmed. */
-  institution?: string
-  /** e.g. '2024 — 2025'. Leave empty to show a dash. */
+  level?: string
   period?: string
   focus?: string
-  /** e.g. 'In progress' or 'Completed'. */
   status?: string
 }
 
-/**
- * Education and study. Keep names and dates editable here; anything not yet
- * confirmed is left blank and renders as a dash.
- */
+
 export const education: EducationItem[] = [
   {
+    qualification: 'Diploma in Cloud Engineering',
+    level: '(NZQA Level 7)',
+    period: '',
+    focus: 'Cloud architecture, storage, networking and identity',
+    status: 'Expected April 2027',
+  },
+  {
+    qualification: 'Diploma in Cloud Computing & Cybersecurity',
+    level: '(NZQA Level 7)',
+    period: '',
+    focus: 'Cloud architecture, storage, networking and identity',
+    status: 'Expected April 2027',
+  },
+  {
     qualification: 'Full Stack Software Development',
-    institution: '',
+    level: '',
     period: '',
     focus: 'Front-end, back-end, databases and REST APIs',
     status: '',
   },
   {
-    qualification: 'Information Technology qualification',
-    institution: '',
+    qualification: 'Information Technology',
+    level: '(NZQA Level 5)',
     period: '',
     focus: 'IT fundamentals',
     status: '',
   },
   {
-    qualification: 'Cloud Engineering studies',
-    institution: '',
-    period: '',
-    focus: 'Cloud architecture, storage, networking and identity',
-    status: '',
-  },
-  {
     qualification: 'AWS & Microsoft Azure learning',
-    institution: '',
+    level: '',
     period: '',
     focus: 'Applied cloud services and certification study',
     status: '',
   },
 ]
 
-export const educationNote =
-  'Provider names, dates and statuses are yours to add — blanks show as dashes in src/data/education.ts.'
+export const educationNote = `* Education and study are ongoing. Dates and details are subject to change.`

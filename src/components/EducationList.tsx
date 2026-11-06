@@ -1,7 +1,7 @@
 import Reveal from './Reveal'
-import { education, educationNote } from '../data/education'
+import { education } from '../data/education'
 
-/** The Education panel inside the combined Experience & education section. */
+
 export default function EducationList() {
   return (
     <>
@@ -14,7 +14,7 @@ export default function EducationList() {
                 <span className="eyebrow shrink-0 text-muted">{item.period?.trim() || '—'}</span>
               </div>
               <p className="mt-1.5 text-sm text-muted">
-                {item.institution?.trim() || 'Institution to be added'}
+                {item.level?.trim() || 'Level to be added'}
               </p>
               {item.focus ? (
                 <p className="mt-3 text-sm leading-relaxed text-muted">{item.focus}</p>
@@ -29,7 +29,7 @@ export default function EducationList() {
         ))}
       </ul>
 
-      <p className="mt-5 text-xs leading-relaxed text-muted">{educationNote}</p>
+     
     </>
   )
 }

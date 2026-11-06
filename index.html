@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
@@ -10,8 +10,16 @@
       content="Oranee is a full stack developer with cloud engineering knowledge based in Wellington, New Zealand. React, TypeScript, Node.js and AWS — with a background in hospitality leadership."
     />
     <meta name="author" content="Oranee" />
-    <meta name="theme-color" content="#111111" media="(prefers-color-scheme: dark)" />
-    <meta name="theme-color" content="#F7F6F2" media="(prefers-color-scheme: light)" />
+    <meta
+      name="theme-color"
+      content="#111111"
+      media="(prefers-color-scheme: dark)"
+    />
+    <meta
+      name="theme-color"
+      content="#F7F6F2"
+      media="(prefers-color-scheme: light)"
+    />
 
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Oranee — Full Stack Developer" />
@@ -36,17 +44,19 @@
 
     <script>
       // Applies the saved theme before first paint so the page never flashes.
-      (function () {
+      ;(function () {
         try {
-          var stored = localStorage.getItem('orannee-portfolio-theme');
-          var prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
-          var dark = stored ? stored === 'dark' : !prefersLight;
-          document.documentElement.classList.toggle('dark', dark);
-          document.documentElement.style.colorScheme = dark ? 'dark' : 'light';
+          var stored = localStorage.getItem('orannee-portfolio-theme')
+          var prefersLight = window.matchMedia(
+            '(prefers-color-scheme: dark)'
+          ).matches
+          var dark = stored ? stored === 'dark' : !prefersLight
+          document.documentElement.classList.toggle('dark', dark)
+          document.documentElement.style.colorScheme = dark ? 'dark' : 'light'
         } catch (error) {
-          document.documentElement.classList.add('dark');
+          document.documentElement.classList.add('dark')
         }
-      })();
+      })()
     </script>
 
     <script type="application/ld+json">
