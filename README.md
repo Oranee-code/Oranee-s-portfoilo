@@ -67,14 +67,18 @@ src/
 ## Design decisions
 
 - **Two-tone editorial layout.** Oversized headings against generous white space,
-  hairline rules instead of rounded cards, and one accent colour (champagne) used
-  sparingly. The horizontal and vertical rules follow the reference layout language.
+  hairline rules instead of rounded cards, and one accent colour (amber `#F59E0B`) used
+  deliberately: section numbers, rules, hover states and the active control. The
+  horizontal and vertical rules follow the reference layout language.
+- **Experience and education share one section.** A two-button toggle switches between
+  the two lists inside a single framed panel, so the career story reads as one block
+  instead of two half-sections.
 - **Colour is tokenised.** `src/index.css` defines CSS variables for surface, ink,
   line and accent; `tailwind.config.js` maps them to Tailwind colours. Dark and light
   modes therefore swap one set of tokens, which also makes the theme transition
   smooth and keeps a single source of truth for the palette.
-  Light mode uses a slightly deeper champagne for text so it stays readable on warm
-  white; the brand `#B9A47C` is unchanged.
+  Light mode uses amber-700 (`#B45309`) for text so it stays readable on warm white;
+  `#F59E0B` itself is kept for fills (the active toggle) through `--accent-strong`.
 - **Two typefaces only.** Inter for UI and body, Instrument Serif italic for editorial
   contrast. Both load from Google Fonts with system fallbacks, so the page is still
   readable if the fonts fail.

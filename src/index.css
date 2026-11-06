@@ -11,9 +11,11 @@
     --ink: 17 17 17;
     --ink-muted: 90 87 80;
     --line: 214 211 204;
-    /* Champagne #B9A47C is the brand accent; on the warm white surface it is
-       darkened slightly so accent-coloured text keeps a readable contrast. */
-    --accent: 138 115 69;
+    /* Amber #F59E0B is the brand accent. On the warm white surface it is
+       darkened to amber-700 so accent-coloured text keeps a readable contrast;
+       the untouched #F59E0B is still used for fills (--accent-strong). */
+    --accent: 180 83 9;
+    --accent-strong: 245 158 11;
   }
 
   .dark {
@@ -23,7 +25,8 @@
     --ink: 247 246 242;
     --ink-muted: 168 164 155;
     --line: 58 56 52;
-    --accent: 185 164 124;
+    --accent: 245 158 11;
+    --accent-strong: 245 158 11;
   }
 
   *,

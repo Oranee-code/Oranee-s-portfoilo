@@ -14,6 +14,7 @@ export default {
         muted: 'rgb(var(--ink-muted) / <alpha-value>)',
         line: 'rgb(var(--line) / <alpha-value>)',
         accent: 'rgb(var(--accent) / <alpha-value>)',
+        'accent-strong': 'rgb(var(--accent-strong) / <alpha-value>)',
       },
       fontFamily: {
         sans: [

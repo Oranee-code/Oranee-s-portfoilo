@@ -7,7 +7,7 @@ export default function Contact() {
     <section id="contact" aria-labelledby="contact-heading" className="relative py-24 md:py-32">
       <div className="shell">
         <div className="border-t border-line pt-6">
-          <p className="eyebrow text-accent">06 — Contact</p>
+          <p className="eyebrow text-accent">05 — Contact</p>
         </div>
 
         <div className="mt-10 grid gap-14 lg:grid-cols-12 lg:gap-10">
@@ -32,6 +32,18 @@ export default function Contact() {
                   </p>
                 )}
               </div>
+
+              <p className="mt-6 text-sm text-muted">
+                Freelance &amp; client work:{' '}
+                <a
+                  href={contact.studio.url}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="text-ink underline decoration-line underline-offset-4 transition-colors duration-300 hover:text-accent hover:decoration-accent"
+                >
+                  {contact.studio.name}
+                </a>
+              </p>
             </Reveal>
           </div>
 

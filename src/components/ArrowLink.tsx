@@ -22,7 +22,7 @@ export default function ArrowLink({
 }: ArrowLinkProps) {
   const styles =
     variant === 'solid'
-      ? 'bg-ink text-surface hover:bg-accent hover:text-[#111111]'
+      ? 'bg-ink text-surface hover:bg-accent-strong hover:text-[#111111]'
       : 'border border-line text-ink hover:border-accent hover:text-accent'
 
   const externalProps = external ? { target: '_blank', rel: 'noreferrer noopener' } : {}
