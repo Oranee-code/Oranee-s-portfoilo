@@ -99,6 +99,21 @@
   .skip-link:focus {
     @apply not-sr-only fixed left-4 top-4 z-[100] bg-ink px-4 py-2 text-sm text-surface;
   }
+
+  /* Solid amber band (About). It carries its own colour tokens so the page
+     theme cannot wash it out, and keeps near-black ink for contrast on
+     #F59E0B. Borders read as a darker amber rule, never a grey hairline. */
+  .amber-panel {
+    --surface: 245 158 11;
+    --surface-raised: 245 158 11;
+    --ink: 26 20 3;
+    --ink-muted: 74 52 6;
+    --line: 140 92 4;
+    --accent: 26 20 3;
+    --accent-strong: 26 20 3;
+    background-color: rgb(var(--surface));
+    color: rgb(var(--ink));
+  }
 }
 
 /* Very light film grain — adds depth to the large flat surfaces without

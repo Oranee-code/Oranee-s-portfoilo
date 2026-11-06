@@ -32,4 +32,4 @@ export const skillGroups: SkillGroup[] = [
 ]
 
 export const skillsNote =
-  'These are technologies I have studied, practised and used in training projects. Where I have not yet used something in a professional engineering role, I have said so rather than overstate it.'
+  'Technologies I have studied and used in training and personal projects. Where I have not used one professionally, I say so.'

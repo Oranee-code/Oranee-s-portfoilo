@@ -12,7 +12,7 @@ export const contact = {
   location: 'Wellington, New Zealand',
   headline: 'Have a role, a project, or a problem worth solving?',
   body:
-    'I am looking for a junior-to-intermediate developer role where I can keep learning across the front end, back end and cloud. I am also happy to talk about a specific project, a system that needs fixing, or what cloud engineering looks like day to day.',
+    'I am looking for a junior-to-intermediate developer role across front end, back end and cloud — or a conversation about a project or system that needs fixing.',
   ctaLabel: 'Email me',
   /** Your freelance studio, linked from the contact section and the footer. */
   studio: {

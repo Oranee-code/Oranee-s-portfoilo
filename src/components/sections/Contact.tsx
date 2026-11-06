@@ -4,7 +4,11 @@ import { contact, contactChannels } from '../../data/contact'
 
 export default function Contact() {
   return (
-    <section id="contact" aria-labelledby="contact-heading" className="relative py-24 md:py-32">
+    <section
+      id="contact"
+      aria-labelledby="contact-heading"
+      className="relative bg-accent-strong/[0.09] py-24 md:py-32"
+    >
       <div className="shell">
         <div className="border-t border-line pt-6">
           <p className="eyebrow text-accent">05 — Contact</p>

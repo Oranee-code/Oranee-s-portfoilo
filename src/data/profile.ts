@@ -11,7 +11,7 @@ export const profile = {
   eyebrow: 'Full Stack Developer · Cloud Engineering',
   /** One short paragraph. Keep it plain and specific. */
   intro:
-    'I build web applications end to end: considered interfaces with React and TypeScript, the APIs and data behind them, and the cloud infrastructure they run on. I came to software from hospitality management, where I learned that clear systems and clear communication solve more problems than any single tool.',
+    'I build web applications end to end — React and TypeScript in front, the APIs and data behind them, the cloud underneath. I came to software from hospitality management, where clear systems and clear communication solved more than any single tool.',
   location: 'Wellington, New Zealand',
   availability: 'Open to developer opportunities',
   /**

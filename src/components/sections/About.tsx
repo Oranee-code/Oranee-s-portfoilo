@@ -4,7 +4,11 @@ import { about } from '../../data/about'
 
 export default function About() {
   return (
-    <section id="about" aria-labelledby="about-heading" className="relative py-24 md:py-32">
+    <section
+      id="about"
+      aria-labelledby="about-heading"
+      className="amber-panel relative py-24 md:py-32"
+    >
       <div className="shell">
         <SectionHeader
           index="01"
