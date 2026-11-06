@@ -44,14 +44,19 @@ export default function Header() {
     >
       <div className="shell flex h-16 items-center justify-between gap-4 md:h-20">
         <a
-          href="#top"
+          href="#home"
           className="group flex items-baseline gap-3"
           aria-label={`${profile.name} — back to top`}
         >
           <span className="font-display text-2xl leading-none tracking-tight">
             {profile.name}
+            </span>
+            <span className="font-display text-2xl leading-none tracking-tight">
+            {profile.last}
+           
             <span className="text-accent">.</span>
           </span>
+          
           <span className="hidden text-[0.6rem] uppercase tracking-[0.24em] text-muted sm:block">
             {profile.role}
           </span>

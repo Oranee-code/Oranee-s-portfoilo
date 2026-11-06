@@ -20,7 +20,6 @@ export default function About() {
               <em className="font-display italic">a developer&rsquo;s</em> direction.
             </>
           }
-          lede="From running shifts to shipping software — the same instinct, applied to a different kind of system."
         />
 
         <div className="mt-14 grid gap-12 lg:grid-cols-12 lg:gap-10">

@@ -37,12 +37,12 @@ export const education: EducationItem[] = [
     status: '',
   },
   {
-    qualification: 'AWS & Microsoft Azure learning',
-    level: '',
+    qualification: 'AWS Academy',
+    level: 'Graduate -Training Badge',
     period: '',
     focus: 'Applied cloud services and certification study',
     status: '',
   },
 ]
 
-export const educationNote = `* Education and study are ongoing. Dates and details are subject to change.`
+

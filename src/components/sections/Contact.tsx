@@ -23,11 +23,8 @@ export default function Contact() {
               >
                 {contact.headline}
               </h2>
-              <p className="mt-6 max-w-lg text-[0.98rem] leading-relaxed text-muted">
-                {contact.body}
-              </p>
 
-              <div className="mt-9">
+              <div className="mt-12">
                 {contact.email ? (
                   <ArrowLink href={`mailto:${contact.email}`}>{contact.ctaLabel}</ArrowLink>
                 ) : (
@@ -36,8 +33,8 @@ export default function Contact() {
                   </p>
                 )}
               </div>
-
-              <p className="mt-6 text-sm text-muted">
+{/* 
+              <p className="mt-10 text-sm text-muted">
                 Freelance &amp; client work:{' '}
                 <a
                   href={contact.studio.url}
@@ -47,7 +44,7 @@ export default function Contact() {
                 >
                   {contact.studio.name}
                 </a>
-              </p>
+              </p> */}
             </Reveal>
           </div>
 
@@ -80,9 +77,7 @@ export default function Contact() {
               ))}
             </dl>
 
-            <p className="mt-4 text-[0.6rem] uppercase leading-relaxed tracking-[0.16em] text-muted">
-              Details marked &ldquo;to be added&rdquo; live in src/data/contact.ts
-            </p>
+            
           </div>
         </div>
       </div>

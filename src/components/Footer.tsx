@@ -36,7 +36,7 @@ export default function Footer() {
         </ul>
 
         <a
-          href="#top"
+          href="#home"
           className="group inline-flex items-center gap-2 self-start text-[0.62rem] uppercase tracking-[0.2em] text-muted transition-colors duration-300 hover:text-ink md:self-auto"
         >
           Back to top

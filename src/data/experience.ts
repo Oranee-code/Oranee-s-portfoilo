@@ -1,18 +1,12 @@
 export type ExperienceItem = {
   role: string
-  /** Employer name — leave empty until you want it shown. */
   organisation?: string
-  /** e.g. '2021 — 2024'. Leave empty to show a dash. */
   period?: string
-  /** Short context label, e.g. 'Hospitality & retail'. */
   context?: string
   highlights: string[]
 }
 
-/**
- * Professional experience, most recent first. Only roles actually held are
- * listed; the software entries describe study and projects, not employment.
- */
+
 export const experience: ExperienceItem[] = [
   {
     role: 'Store Manager',

@@ -17,8 +17,7 @@ export default function Projects() {
               Work that shows <em className="font-display italic">how I think.</em>
             </>
           }
-          lede="Large previews rather than thumbnails — each one something I can walk you through, from the data model up to the interface."
-        />
+            />
 
         <div className="mt-14 space-y-16 md:space-y-24">
           {projects.map((project, index) => (

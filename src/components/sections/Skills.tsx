@@ -16,7 +16,6 @@ export default function Skills() {
               <em className="font-display italic">and the cloud</em> underneath.
             </>
           }
-          lede="Grouped the way the work actually splits: what people use, what serves it, and where it runs."
         />
 
         <div className="mt-14 grid gap-x-10 gap-y-12 sm:grid-cols-2 lg:grid-cols-4">

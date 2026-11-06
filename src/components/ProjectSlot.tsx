@@ -2,10 +2,7 @@ type ProjectSlotProps = {
   index: number
 }
 
-/**
- * A reserved space for a real project. It renders instead of inventing a
- * project, and explains exactly where the content goes.
- */
+
 export default function ProjectSlot({ index }: ProjectSlotProps) {
   const number = String(index + 1).padStart(2, '0')
 
@@ -49,14 +46,8 @@ export default function ProjectSlot({ index }: ProjectSlotProps) {
               <dt>Live site</dt>
               <dd aria-hidden="true">—</dd>
             </div>
-            <div className="flex justify-between gap-4">
-              <dt>Repository</dt>
-              <dd aria-hidden="true">—</dd>
-            </div>
-            <div className="flex justify-between gap-4">
-              <dt>Screenshot</dt>
-              <dd aria-hidden="true">—</dd>
-            </div>
+            
+            
           </dl>
         </div>
       </div>

@@ -4,15 +4,13 @@
  */
 export const contact = {
   /** e.g. 'orannee@example.com' */
-  email: '',
+  email: 'oranee.ks99@gmail.com',
   /** Full profile URL, e.g. 'https://www.linkedin.com/in/your-handle' */
-  linkedin: '',
+  linkedin: 'www.linkedin.com/in/oraneekasem',
   /** Full profile URL, e.g. 'https://github.com/your-handle' */
   github: '',
   location: 'Wellington, New Zealand',
-  headline: 'Have a role, a project, or a problem worth solving?',
-  body:
-    'I am looking for a junior-to-intermediate developer role across front end, back end and cloud — or a conversation about a project or system that needs fixing.',
+  headline: 'Have a project?',
   ctaLabel: 'Email me',
   /** Your freelance studio, linked from the contact section and the footer. */
   studio: {
@@ -33,19 +31,16 @@ export const contactChannels: ContactChannel[] = [
     label: 'Email',
     value: contact.email,
     href: contact.email ? `mailto:${contact.email}` : undefined,
-    note: 'Add your email in src/data/contact.ts',
   },
   {
     label: 'LinkedIn',
     value: contact.linkedin,
-    href: contact.linkedin || undefined,
-    note: 'Add your profile URL in src/data/contact.ts',
+    href: contact.linkedin || undefined, 
   },
   {
     label: 'GitHub',
     value: contact.github,
     href: contact.github || undefined,
-    note: 'Add your profile URL in src/data/contact.ts',
   },
   {
     label: 'Studio',
