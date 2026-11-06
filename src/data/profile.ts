@@ -8,7 +8,5 @@ export const profile = {
   location: 'New Zealand · Remote',
   availability: 'Available for work',
  
-  portrait: '',
-  portraitAlt: 'Portrait of Oranee',
-  facts: ['Based in Wellington, NZ', 'Full stack + cloud', 'Available for work'],
+
 }

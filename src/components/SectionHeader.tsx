@@ -2,7 +2,6 @@ import type { ReactNode } from 'react'
 import Reveal from './Reveal'
 
 type SectionHeaderProps = {
-  /** Two-digit section number, e.g. '01'. */
   index: string
   label: string
   title: ReactNode

@@ -11,7 +11,7 @@ export default function Footer() {
       <div className="shell flex flex-col gap-8 py-10 md:flex-row md:items-center md:justify-between">
         <div>
           <p className="font-display text-xl leading-none tracking-tight">
-            {profile.name}
+            {profile.name} {profile.last}
             <span className="text-accent">.</span>
           </p>
           <p className="mt-2 text-[0.62rem] uppercase tracking-[0.2em] text-muted">
@@ -44,11 +44,11 @@ export default function Footer() {
         </a>
       </div>
 
-      <div className="shell flex flex-col gap-2 border-t border-line py-5 text-[0.62rem] uppercase tracking-[0.16em] text-muted sm:flex-row sm:items-center sm:justify-between">
+      <div className="shell flex-col gap-2 border-t border-line py-5 text-[0.62rem] uppercase tracking-[0.16em] text-muted sm:flex-row sm:items-center sm:justify-between">
         <span>
-          © {year} {profile.name}
+          © {year} {profile.name}{profile.last}. All rights reserved.
         </span>
-        <span>Built with React, TypeScript &amp; Tailwind CSS</span>
+        
       </div>
     </footer>
   )

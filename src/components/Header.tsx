@@ -49,11 +49,7 @@ export default function Header() {
           aria-label={`${profile.name} — back to top`}
         >
           <span className="font-display text-2xl leading-none tracking-tight">
-            {profile.name}
-            </span>
-            <span className="font-display text-2xl leading-none tracking-tight">
-            {profile.last}
-           
+            {profile.name} {profile.last}
             <span className="text-accent">.</span>
           </span>
           
