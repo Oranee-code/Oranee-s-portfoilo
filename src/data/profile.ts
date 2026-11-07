@@ -8,5 +8,5 @@ export const profile = {
   location: 'New Zealand · Remote',
   availability: 'Available for work',
  
-
+  portrait: null,
 }

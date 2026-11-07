@@ -24,12 +24,10 @@ export const skillGroups: SkillGroup[] = [
     summary: 'Architecture and delivery',
     items: ['AWS', 'Microsoft Azure', 'Cloud architecture', 'Storage', 'Networking', 'IAM', 'Docker'],
   },
-  {
-    category: 'Tools',
-    summary: 'Day-to-day workflow',
-    items: ['Git', 'GitHub', 'Vite', 'Vitest', 'Auth0'],
-  },
+  // {
+  //   category: 'Tools',
+  //   summary: 'Day-to-day workflow',
+  //   items: ['Git', 'GitHub', 'Vite', 'Vitest', 'Auth0'],
+  // },
 ]
 
-export const skillsNote =
-  'Technologies I have studied and used in training and personal projects. Where I have not used one professionally, I say so.'

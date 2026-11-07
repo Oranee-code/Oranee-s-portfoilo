@@ -1,6 +1,6 @@
 import Reveal from '../Reveal'
 import SectionHeader from '../SectionHeader'
-import { skillGroups, skillsNote } from '../../data/skills'
+import { skillGroups } from '../../data/skills'
 
 export default function Skills() {
   return (
@@ -49,11 +49,7 @@ export default function Skills() {
           ))}
         </div>
 
-        <Reveal className="mt-12">
-          <p className="max-w-2xl border-t border-line pt-6 text-xs leading-relaxed text-muted">
-            {skillsNote}
-          </p>
-        </Reveal>
+     
       </div>
     </section>
   )
