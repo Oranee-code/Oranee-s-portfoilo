@@ -4,7 +4,6 @@ export type Project = {
   summary: string
   tech: string[]
   year?: string
-  /** Screenshot in /public, e.g. '/projects/example.jpg'. */
   image?: string
   /** Full URL, e.g. 'https://example.com'. Leave empty until the site is live. */
   liveUrl?: string
@@ -15,7 +14,7 @@ export type Project = {
 }
 
 export const projects: Project[] = [
-  { id: 'project-01', title: '', summary: '', tech: [], placeholder: true },
+  { id: 'project-01', title: '', summary: '', tech: [], placeholder: true , liveUrl: 'https://www.auraniestudio.com/', repoUrl: ''},
   { id: 'project-02', title: '', summary: '', tech: [], placeholder: true },
   { id: 'project-03', title: '', summary: '', tech: [], placeholder: true },
 ]
