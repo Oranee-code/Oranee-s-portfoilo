@@ -1,10 +1,20 @@
-import { contactChannels } from '../data/contact'
+import { contact, contactChannels } from '../data/contact'
 import { profile } from '../data/profile'
-import { ArrowUpIcon } from './icons'
+import { ArrowUpIcon, GlobeIcon, LinkedinIcon, MailIcon } from './icons'
+
+/** Footer channels are shown as icon links: email, LinkedIn and the studio site. */
+const channelIcons = {
+  Email: MailIcon,
+  LinkedIn: LinkedinIcon,
+  Studio: GlobeIcon,
+}
+
+const iconButtonClass =
+  'inline-flex h-10 w-10 items-center justify-center border transition-colors duration-300'
 
 export default function Footer() {
   const year = new Date().getFullYear()
-  const links = contactChannels.filter((channel) => channel.href)
+  const links = contactChannels.filter((channel) => channel.label in channelIcons)
 
   return (
     <footer className="relative z-10 border-t border-line">
@@ -19,20 +29,38 @@ export default function Footer() {
           </p>
         </div>
 
-        <ul className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm">
-          {links.map((channel) => (
-            <li key={channel.label}>
-              <a
-                href={channel.href}
-                {...(channel.label === 'Email'
-                  ? {}
-                  : { target: '_blank', rel: 'noreferrer noopener' })}
-                className="text-muted transition-colors duration-300 hover:text-accent"
-              >
-                {channel.label}
-              </a>
-            </li>
-          ))}
+        <ul className="flex flex-wrap items-center gap-3">
+          {links.map((channel) => {
+            const Icon = channelIcons[channel.label as keyof typeof channelIcons]
+            const accessibleLabel =
+              channel.label === 'Studio' ? contact.studio.name : channel.label
+
+            return (
+              <li key={channel.label}>
+                {channel.href ? (
+                  <a
+                    href={channel.href}
+                    aria-label={accessibleLabel}
+                    title={accessibleLabel}
+                    {...(channel.label === 'Email'
+                      ? {}
+                      : { target: '_blank', rel: 'noreferrer noopener' })}
+                    className={`${iconButtonClass} border-line text-muted hover:border-accent hover:text-accent`}
+                  >
+                    <Icon />
+                  </a>
+                ) : (
+                  <span
+                    title={`${channel.label} — to be added in src/data/contact.ts`}
+                    className={`${iconButtonClass} border-dashed border-line text-muted/60`}
+                  >
+                    <Icon />
+                    <span className="sr-only">{channel.label} — to be added</span>
+                  </span>
+                )}
+              </li>
+            )
+          })}
         </ul>
 
         <a

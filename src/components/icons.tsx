@@ -47,6 +47,40 @@ export function ArrowUpIcon(props: IconProps) {
   )
 }
 
+export function MailIcon(props: IconProps) {
+  return (
+    <svg {...base} width={18} height={18} viewBox="0 0 18 18" {...props}>
+      <rect x="2.25" y="4.25" width="13.5" height="9.5" rx="1.25" />
+      <path d="m2.9 5.4 6.1 4.4 6.1-4.4" />
+    </svg>
+  )
+}
+
+export function LinkedinIcon(props: IconProps) {
+  return (
+    <svg
+      {...base}
+      width={18}
+      height={18}
+      viewBox="0 0 18 18"
+      fill="currentColor"
+      stroke="none"
+      {...props}
+    >
+      <path d="M3.4 6.7h2.15v7.9H3.4zM4.47 2.4a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5ZM7.15 6.7h2.06v1.08h.03c.32-.6 1.1-1.24 2.28-1.24 1.77 0 2.81 1.11 2.81 3.16v4.9h-2.16v-4.34c0-1.12-.4-1.86-1.37-1.86-.75 0-1.2.5-1.39.99-.07.17-.09.41-.09.65v4.56H7.15z" />
+    </svg>
+  )
+}
+
+export function GlobeIcon(props: IconProps) {
+  return (
+    <svg {...base} width={18} height={18} viewBox="0 0 18 18" {...props}>
+      <circle cx="9" cy="9" r="6.25" />
+      <path d="M2.9 9h12.2M9 2.75c1.6 1.72 2.45 3.85 2.45 6.25S10.6 13.53 9 15.25c-1.6-1.72-2.45-3.85-2.45-6.25S7.4 4.47 9 2.75Z" />
+    </svg>
+  )
+}
+
 export function SunIcon(props: IconProps) {
   return (
     <svg {...base} width={18} height={18} viewBox="0 0 18 18" {...props}>

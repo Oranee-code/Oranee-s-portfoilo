@@ -12,7 +12,7 @@ export default function Hero() {
     >
       <div aria-hidden="true" className="rule-grid pointer-events-none absolute inset-0 opacity-60" />
 
-      <div className="shell relative z-10 grid flex-1 items-center gap-12 py-12 lg:grid-cols-12 lg:gap-10 lg:py-16">
+      <div className="shell relative z-10 grid flex-1 items-center gap-12 pb-20 pt-6 lg:grid-cols-12 lg:gap-10 lg:pb-24 lg:pt-8">
         <div className="lg:col-span-7">
           <p className="eyebrow flex items-center gap-4 text-accent">
             <span aria-hidden="true" className="inline-block h-px w-8 bg-accent" />
