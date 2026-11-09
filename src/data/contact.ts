@@ -1,20 +1,21 @@
-/**
- * Contact details. Leave a value empty to show a clear placeholder instead of
- * a broken link — no addresses or profiles are invented.
- */
+
 export const contact = {
-  /** e.g. 'orannee@example.com' */
   email: 'oranee.ks99@gmail.com',
-  /** Full profile URL, e.g. 'https://www.linkedin.com/in/your-handle' */
-  linkedin: 'www.linkedin.com/in/oraneekasem',
-  /** Full profile URL, e.g. 'https://github.com/your-handle' */
-  github: '',
+
+  linkedin: {
+    name: 'Oranee Kasem',
+    url: 'https://www.linkedin.com/in/oraneekasem/',
+  },
+
+  github: 'https://github.com/Oranee-code',
+
   location: 'Wellington, New Zealand',
+
   headline: 'Have a project?',
   ctaLabel: 'Email me',
-  /** Your freelance studio, linked from the contact section and the footer. */
+
   studio: {
-    name: 'Auranie Studio',
+    name: 'www.auraniestudio.com',
     url: 'https://www.auraniestudio.com/',
   },
 }
@@ -30,16 +31,16 @@ export const contactChannels: ContactChannel[] = [
   {
     label: 'Email',
     value: contact.email,
-    href: contact.email ? `mailto:${contact.email}` : undefined,
+    href: `mailto:${contact.email}`,
   },
   {
     label: 'LinkedIn',
-    value: contact.linkedin,
-    href: contact.linkedin || undefined, 
+    value: contact.linkedin.name,
+    href: contact.linkedin.url,
   },
   {
     label: 'GitHub',
-    value: contact.github,
+    value: contact.github || 'Oranee-code',
     href: contact.github || undefined,
   },
   {
