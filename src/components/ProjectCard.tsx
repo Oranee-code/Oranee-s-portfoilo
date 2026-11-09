@@ -12,7 +12,8 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
   return (
     <article className="group border-t border-line pt-8">
       <div className="grid gap-8 lg:grid-cols-12 lg:gap-10">
-        <div className="lg:col-span-8">
+      <div className="max-w-[30.5rem] lg:col-span-9 lg:max-w-none">
+
           <div className="relative aspect-[16/10] w-full overflow-hidden border border-line bg-raised">
             {project.image ? (
               <img
@@ -29,8 +30,8 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
             )}
           </div>
         </div>
-
-        <div className="flex flex-col lg:col-span-4">
+        <div className="flex flex-col lg:col-span-8">
+       
           <div className="flex items-baseline justify-between gap-4">
             <p className="eyebrow text-accent">Project {number}</p>
             {project.year ? (

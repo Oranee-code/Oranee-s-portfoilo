@@ -1,8 +1,5 @@
-import ProjectCard from '../ProjectCard'
-import ProjectSlot from '../ProjectSlot'
-import Reveal from '../Reveal'
 import SectionHeader from '../SectionHeader'
-import { projects } from '../../data/projects'
+import ProjectCarousel from '../ProjectCarousel'
 
 export default function Projects() {
   return (
@@ -19,16 +16,8 @@ export default function Projects() {
           }
             />
 
-        <div className="mt-14 space-y-16 md:space-y-24">
-          {projects.map((project, index) => (
-            <Reveal key={project.id}>
-              {project.placeholder || !project.title ? (
-                <ProjectSlot index={index} />
-              ) : (
-                <ProjectCard project={project} index={index} />
-              )}
-            </Reveal>
-          ))}
+            <div className="mt-14">
+            <ProjectCarousel />
         </div>
       </div>
     </section>

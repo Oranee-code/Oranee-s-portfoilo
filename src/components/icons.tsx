@@ -30,6 +30,13 @@ export function ArrowRightIcon(props: IconProps) {
     </svg>
   )
 }
+export function ArrowLeftIcon(props: IconProps) {
+  return (
+    <svg {...base} {...props}>
+      <path d="M13.25 8H2.75M6.5 4.25 2.75 8 6.5 11.75" />
+    </svg>
+  )
+}
 
 export function ArrowDownIcon(props: IconProps) {
   return (

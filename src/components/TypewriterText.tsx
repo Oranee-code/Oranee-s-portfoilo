@@ -8,12 +8,8 @@ type TypewriterTextProps = {
   speed?: number
 }
  
-/**
- * Types `text` out one character at a time with a blinking caret. Assistive
- * tech gets the finished word immediately, and visitors who reduce motion see
- * it already typed — the animation is purely decorative.
- */
-export default function TypewriterText({ text, startDelay = 300, speed = 140 }: TypewriterTextProps) {
+
+export default function TypewriterText({ text, startDelay = 3000, speed = 180 }: TypewriterTextProps) {
   const [typed, setTyped] = useState(0)
  
   useEffect(() => {
