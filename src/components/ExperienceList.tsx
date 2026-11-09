@@ -1,5 +1,5 @@
 import Reveal from './Reveal'
-import { experience, experienceNote } from '../data/experience'
+import { experience,  } from '../data/experience'
 
 /** The Experience panel inside the combined Experience & education section. */
 export default function ExperienceList() {
@@ -40,7 +40,7 @@ export default function ExperienceList() {
         ))}
       </ol>
 
-      <p className="mt-5 text-xs leading-relaxed text-muted">{experienceNote}</p>
+     
     </>
   )
 }
