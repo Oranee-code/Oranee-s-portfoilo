@@ -11,7 +11,8 @@ export default function Projects() {
           headingId="work-heading"
           title={
             <>
-              Work that shows <em className="font-display italic">how I think.</em>
+            
+            A collection of things  <em className="font-display italic">I've built.</em>
             </>
           }
             />

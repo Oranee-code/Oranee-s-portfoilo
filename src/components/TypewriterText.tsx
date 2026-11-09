@@ -9,7 +9,7 @@ type TypewriterTextProps = {
 }
  
 
-export default function TypewriterText({ text, startDelay = 3000, speed = 180 }: TypewriterTextProps) {
+export default function TypewriterText({ text, startDelay = 2000, speed = 180 }: TypewriterTextProps) {
   const [typed, setTyped] = useState(0)
  
   useEffect(() => {
