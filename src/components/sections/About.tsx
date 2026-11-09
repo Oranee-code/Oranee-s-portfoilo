@@ -16,8 +16,8 @@ export default function About() {
           headingId="about-heading"
           title={
             <>
-              A hospitality background,{' '}
-              <em className="font-display italic">a developer&rsquo;s</em> direction.
+            From people-focused work to{' '}
+              <em className="font-display italic">technology-driven&rsquo;s</em> solutions.
             </>
           }
         />
