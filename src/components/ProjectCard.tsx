@@ -1,5 +1,4 @@
 import type { Project } from '../data/projects'
-import { ArrowUpIcon} from './icons'
 import { Globe } from 'lucide-react'
 
 type ProjectCardProps = {
@@ -69,9 +68,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
                 Live site
                 <Globe size={18} strokeWidth={1.5} />
               </a>
-            ) : (
-              <span className="text-xs uppercase tracking-[0.14em] text-muted">Live link —</span>
-            )}
+            ) : null}
 
             {/* {project.repoUrl ? (
               <a

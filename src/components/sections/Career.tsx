@@ -22,7 +22,7 @@ export default function Career() {
           }
         />
 
-        <Reveal className="mt-10">
+        <Reveal className="mt-6">
           <div className="border border-line bg-raised px-4 py-5 sm:px-6 md:px-8 md:py-6">
             <EducationList />
           </div>
