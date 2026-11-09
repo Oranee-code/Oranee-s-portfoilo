@@ -10,7 +10,8 @@ export default function PortraitCard() {
       <div className="relative aspect-[4/5] w-full overflow-hidden border border-line bg-raised">
         {profile.portrait ? (
           <img
-            src="oo"
+            src={profile.portrait}
+            alt={`${profile.name} — portrait`}
             width={640}
             height={800}
             fetchPriority="high"
