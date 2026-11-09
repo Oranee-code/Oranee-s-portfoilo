@@ -31,7 +31,7 @@ export default function About() {
                     {about.quote}
                   </p>
                 </blockquote>
-                <figcaption className="eyebrow mt-5 pl-6 text-muted">In my own words</figcaption>
+                {/* <figcaption className="eyebrow mt-5 pl-6 text-muted">In my own words</figcaption> */}
               </figure>
             </Reveal>
           </div>

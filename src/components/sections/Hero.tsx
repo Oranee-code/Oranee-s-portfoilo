@@ -7,11 +7,11 @@ export default function Hero() {
     <section
       id="home"
       aria-labelledby="hero-heading"
-      className="relative flex min-h-[100svh] flex-col justify-between overflow-hidden pt-24 md:pt-32"
+      className="relative flex min-h-[90svh] flex-col justify-between overflow-hidden pt-12 md:pt-10"
     >
       <div aria-hidden="true" className="rule-grid pointer-events-none absolute inset-0 opacity-60" />
 
-      <div className="shell relative z-10 grid flex-1 items-center gap-12 py-12 lg:grid-cols-12 lg:gap-10 lg:py-16">
+      <div className="shell relative z-10 grid flex-1 items-center gap-12 py-12 lg:grid-cols-12 lg:gap-10 lg:py-8">
         <div className="lg:col-span-7">
           <p className="eyebrow flex items-center gap-4 text-accent">
             <span aria-hidden="true" className="inline-block h-px w-8 bg-accent" />
@@ -20,15 +20,15 @@ export default function Hero() {
 
           <h1
             id="hero-heading"
-            className="mt-5 text-[clamp(3.5rem,10vw,8.5rem)] font-medium leading-[0.86] tracking-[-0.05em]"
+            className="mt-7 text-[clamp(3.5rem,10vw,8.5rem)] font-medium leading-[0.86] tracking-[-0.05em]"
           >
             {profile.name} 
-            <span className="mt-2 block font-display text-[clamp(1.6rem,4vw,3.1rem)] font-normal italic leading-[1.08] tracking-[-0.01em] text-muted">
+            <span className="mt-5 block font-display text-[clamp(1.6rem,4vw,3.1rem)] font-normal italic leading-[1.08] tracking-[-0.01em] text-muted">
             
             </span>
           </h1>
 
-          <p className="mt-2 max-w-xl text-[1.02rem] leading-relaxed text-muted md:text-[1.08rem]">
+          <p className="mt-10 max-w-xl text-[1.02rem] leading-relaxed text-muted md:text-[1.08rem]">
             {profile.intro}
           </p>
 
@@ -45,7 +45,7 @@ export default function Hero() {
           </p>
         </div>
 
-        <div className="lg:col-span-5 lg:pl-4">
+        <div className="lg:col-span-4 lg:pl-4">
           <PortraitCard />
         </div>
       
