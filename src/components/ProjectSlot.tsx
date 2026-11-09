@@ -9,7 +9,7 @@ export default function ProjectSlot({ index }: ProjectSlotProps) {
   return (
     <article className="group border-t border-line pt-8">
       <div className="grid gap-8 lg:grid-cols-12 lg:gap-10">
-        <div className="lg:col-span-8">
+        <div className="max-w-[37.5rem] lg:col-span-7 lg:max-w-none">
           <div className="relative flex aspect-[16/10] w-full items-center justify-center overflow-hidden border border-line bg-raised transition-colors duration-500 group-hover:border-accent/50">
             <div
               aria-hidden="true"
@@ -30,7 +30,7 @@ export default function ProjectSlot({ index }: ProjectSlotProps) {
           </div>
         </div>
 
-        <div className="flex flex-col lg:col-span-4">
+        <div className="flex flex-col lg:col-span-5">
           <p className="eyebrow text-accent">Project {number}</p>
           <h3 className="mt-4 text-2xl font-normal tracking-[-0.015em] md:text-[1.7rem]">
             Add your project
