@@ -1,6 +1,7 @@
 import { profile } from '../../data/profile'
 import ArrowLink from '../ArrowLink'
 import PortraitCard from '../PortraitCard'
+import TypewriterText from '../TypewriterText'
 
 export default function Hero() {
   return (
@@ -22,7 +23,9 @@ export default function Hero() {
             id="hero-heading"
             className="mt-7 text-[clamp(3.5rem,10vw,8.5rem)] font-medium leading-[0.86] tracking-[-0.05em]"
           >
-            {profile.name} 
+            
+    
+            <TypewriterText text={profile.name} /> 
             <span className="mt-5 block font-display text-[clamp(1.6rem,4vw,3.1rem)] font-normal italic leading-[1.08] tracking-[-0.01em] text-muted">
             
             </span>
